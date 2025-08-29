@@ -6,13 +6,13 @@ dnf install -y git openssl curl gawk coreutils grep jq
 ### Install Docker
 ```bash 
 dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
-dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 systemctl enable --now docker
 ```
 ### Install Docker Compose 
 ```bash 
 dnf update
-dnf install docker-compose-plugin 
+dnf install -y docker-compose-plugin 
 ```
  #### Note: For the plugin version, the command is docker compose (without a hyphen).
 
