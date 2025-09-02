@@ -30,7 +30,9 @@ mv generate_config.sh  generate_config.sh.bckp
 #### create a new generate file
 #### use this file https://github.com/ConsLeGrand/install-mailcow-on-rhel9/generate_config.sh
 ```bash 
- vim generate_config.sh
+curl -o generate_config.sh https://github.com/ConsLeGrand/install-mailcow-on-rhel9/generate_config.sh
+vim generate_config.sh
+chmod +x generate_config.sh
 ```
 #### Adjust the configuration if necessary:
 
